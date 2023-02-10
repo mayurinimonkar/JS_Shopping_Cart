@@ -3,6 +3,7 @@ import { Items } from "./constants";
 function operations(){
     let purchasedItems = [];
     function add(barcode){
+        //if item is purchased, increase the quantity, else add item to purchasedItems
         const item = Items.find((e)=> e.barcode === barcode)
         itemPurchased= purchasedItems.find((e)=>e.barcode == barcode)
         if(itemPurchased){
@@ -14,6 +15,7 @@ function operations(){
     }
 
     function remove(barcode){
+        //if item quantity is more than 1, decrease the quantity, else remove item from purchasedItems
         itemPurchased= purchasedItems.find((e)=>e.barcode == barcode)
         if(itemPurchased.qty >1 ){
             itemPurchased.qty -= 1;
@@ -24,6 +26,7 @@ function operations(){
         
 
     function printBill(){
+        //print the bill
         let total = 0;
         purchasedItems.map((item)=>{
             const totalForItem =  item.price * item.qty;
