@@ -1,0 +1,22 @@
+{
+  "name": "js_shopping_cart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cart.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayurinimonkar/JS_Shopping_Cart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayurinimonkar/JS_Shopping_Cart/issues"
+  },
+  "homepage": "https://github.com/mayurinimonkar/JS_Shopping_Cart#readme",
+  "devDependencies": {
+    "jest": "^29.4.2"
+  }
+}
